@@ -7,7 +7,9 @@ Welcome to ECE180!  We’re really excited that you’ve decided to join us for 
 
 ### On Writing Code
 
-You’re going to be writing and debugging lots of code in this class. In nearly every case, we have two objectives in mind: 1) to give you experience with the many new idioms in Object-oriented development with C++; and 2) to help you to learn to think like a software developer. 
+You’re going to be writing and debugging lots of code in this class. In nearly every case, we have two objectives in mind:
+1. To give you experience with the many new idioms in Object-oriented development with C++
+2. To help you to learn to think like a software developer. 
 
 As important as learning the C++ language may be, we believe that it’s even more important that you learn the conceptual language of software design.  How you think about the problems you’ll face is often the most important factor in whether you can craft a software solution.  
 
