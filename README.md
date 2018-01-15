@@ -164,6 +164,6 @@ It is important to note that Vlad-the-Compiler doesn’t use IDE projects. He us
 
 It is **YOUR RESPONSIBILITY** to make sure you code can build and run using **make**.  
 
-The files we provide for you by default in your assignment project folders will compile by default. They just won’t do much, until you add your own code to the solution.  The main reason you may run into problems is if you add new source files to your solution.  If you add additional source files to your project in order to complete your assignment, it is your reasonability to update the makefile we provide to account for your changes. 
+The files we provide for you by default in your assignment project folders will compile by default. They just won’t do much, until you add your own code to the solution.  The main reason you may run into problems is if you add new source files to your solution.  If you add additional source files to your project in order to complete your assignment, it is your responsibility to update the makefile we provide to account for your changes. 
 
 
