@@ -149,6 +149,7 @@ Github is a SaaS product/website where teams can manage and share source-code re
 Most of you will have used this process may times by now. If you have never used this process, there are many excellent tutorials on getting started with git (tools) and github (website).
 
 To learn more about github: https://guides.github.com/activities/hello-world/
+
 To learn more about git: https://www.atlassian.com/git/tutorials, and https://try.github.io/levels/1/challenges/1
 
 #### Getting Assignments
