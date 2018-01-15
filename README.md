@@ -25,3 +25,4 @@ The file processing component for this assignment will be rather mundane, apart 
 Plagiarism is a rampant issue, in the arts, education, and even in politics. In order to thwart plagiarism, many techniques have been developed and tried. CRC32 computes a numeric fingerprint for a document; cool but not what we need.  In this assignment we’ll use a technique called, “document distance”, which uses a vector-based “distance” function.  This method can be used to trivially determine closely related to documents may be. If the distance is 0, it suggests that the documents are identical, and you’ve caught someone trying to cheat.
 
 [vector_diagram](./rd_imgs/vectors.png)
+![vectors_diagram](./rd_imgs/vectors.png?raw=true "Vectors")
