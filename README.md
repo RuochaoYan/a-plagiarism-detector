@@ -17,7 +17,7 @@ Take time to reflect on these assignments, and consider the larger concepts — 
 ## Overview
 
 In this assignment you will be reading data from files, processing and storing the file contents, processing and comparing the contents, and writing the results back to output files.  If you worked for a bank, this standard input-output process would be referred to by the acronym ETL (Extract, Transform, Load).  ETL may be the most common process patterns you’ll see.
-The file processing component for this assignment will be rather mundane, apart from the fact that we’ll be using C++ streams. It’s the processing part of this assignment that is interesting. 
+The file processing component for this assignment will be rather mundane, apart from the fact that we’ll be using C++ streams. It’s the analysis and tranformational part of this assignment that is interesting. 
 
 
 ### Measuring Similarity Between Documents
