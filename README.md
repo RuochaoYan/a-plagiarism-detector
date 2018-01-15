@@ -163,7 +163,7 @@ After you get your code from github, take a look inside the assignment folder. Y
 4. GradingHarness.*
 5. makefile
 
-Naturally, main.cpp contains your main function, where processing for this application begins. Let's move on to other more interesting classes. 
+Naturally, main.cpp contains your main function, where processing for this application begins.  The makefile was tested to work on macos (unix). You may need to tweak it slightly to work on Windows, as it hasn't been tested there yet. Actual assignment grading will be run on Linux/Ubuntu.  Let's move on to other more interesting classes. 
 
 #### ProcessController
 This class is the top-most controller for this process. It sets up and drives the rest of the processing you'll need to do to complete this assignment. The two most important functions are:
