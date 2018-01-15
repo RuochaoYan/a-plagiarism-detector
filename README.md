@@ -126,9 +126,9 @@ So you’ve consumed three documents, read and parsed each line into words, stor
 ### Saving results 
 
 In order to complete this assignment, your code will need to generate multiple files:
-1. A output file called "output1.txt" for the file "words1.txt", containing a comma-separated list of words found in that file
-2. A output file called "output2.txt" for the file "words2.txt", containing a comma-separated list of words found in that file
-3. A output file called "output3.txt" for the file "words3.txt", containing a comma-separated list of words found in that file
+1. A output file ("output1.txt") for "words1.txt", containing a comma-separated list of words found in that file
+2. A output file ("output2.txt") for "words2.txt", containing a comma-separated list of words found in that file
+3. A output file ("output3.txt") for "words3.txt", containing a comma-separated list of words found in that file
 4. A 3-line summary file (called results.txt) that contains the result of your analysis.  The summary format is:
 
 Distance A*B:  N   (where N is the resulting dot-product you computed between A and B)
@@ -139,7 +139,7 @@ Document A is most similar to document _X_  (where X is the name of the nearest 
 
 **Lousy** programmers never test their code. They change jobs a lot. **Good** programmers test their code after they’ve finished writing it.  But **great** programmers write tests before they write code to solve problems. They try to dream up ways to break their own code, and to prove to themselves that the code has flaws.  
 
-The starter framework for your code contains a testing harness. That harness includes a method called “runtests”. As you develop test functions for your own code, you can add them to the “runtests” method in the harness. As the harness runs, your tests will be called automatically, and output from your tests will be captured in an output file.  For now, it’s up to you to decide how to use this facility — just recognize that writing self-tests for your code is an essential step in learning to improve your software skills.  Also note: you’ll lose points on this assignment if our auto-grading robot (Vlad-the-compiler) discovers that your testing output file is empty. 
+The starter framework for your code contains a testing harness. That harness includes a method called “runtests”. As you develop test functions for your own code, you can add them to the “runtests” method in the harness. As the harness runs, your tests will be called automatically, and output from your tests will be captured in an output file called "testoutput.txt".  For now, it’s up to you to decide how to use this facility — just recognize that writing self-tests for your code is an essential step in learning to improve your software skills.  Also note: you’ll lose points on this assignment if our auto-grading robot (Vlad-the-compiler) discovers that your testing output file is empty. 
 
 ## Code Style Guide
 
