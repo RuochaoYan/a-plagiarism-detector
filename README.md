@@ -135,9 +135,31 @@ In our second major task, we are once again we’re aiming to build an internal 
 
 So you’ve consumed three documents, read and parsed each line into words, stored the words in a collection class, counted the frequency of each word in the associated collection, and generated a set of bi-grams.  Good job!  Have a cookie. Then, it’s time to write the code to compute the dot-product for your document pairs. To do so, you may refer to the distance formula (given above). If you’re stuck, it’s time to try the google, your books, and your peers for further insight.  
 
+## Assignment Starter Code
+
+### Overview
+After you get your code from github, take a look inside the assignment folder. You'll find the following items:
+1. main.cpp
+2. ProcessController.*
+3. FileProcessor.*
+4. GradingHarness.*
+5. makefile
+
+Naturally, main.cpp contains your main function, where processing for this application begins. Let's move on to other more interesting classes. 
+
+#### ProcessController
+xxx 
+
+#### FileProcessor
+xxx 
+
+#### GradingHarness
+xxx 
+
+
 ## Testing
 
-**Lousy** programmers never test their code. They change jobs a lot. **Good** programmers test their code after they’ve finished writing it.  But **great** programmers write tests before they write code to solve problems. They try to dream up ways to break their own code, and to prove to themselves that the code has flaws.  
+**Lousy** programmers never test their code. Instead, they just change jobs -- a lot. **Good** programmers test their code after they’ve finished writing it.  But **great** programmers write tests before they write code to solve problems. They try to dream up ways to break their own code, and to prove to themselves that the code has flaws.  
 
 The starter framework for your code contains a testing harness. That harness includes a method called “runtests”. As you develop test functions for your own code, you can add them to the “runtests” method in the harness. As the harness runs, your tests will be called automatically, and output from your tests will be captured in an output file called "testoutput.txt".  For now, it’s up to you to decide how to use this facility — just recognize that writing self-tests for your code is an essential step in learning to improve your software skills.  Also note: you’ll lose points on this assignment if our auto-grading robot (Vlad-the-compiler) discovers that your testing output file is empty. 
 
