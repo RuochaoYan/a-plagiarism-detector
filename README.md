@@ -22,7 +22,7 @@ The file processing component for this assignment will be rather mundane, apart 
 
 ### Measuring Similarity Between Documents
 
-Plagiarism is a rampant issue, in the arts, education, and even in politics. In order to thwart plagiarism, many techniques have been developed and tried. CRC32 computes a numeric fingerprint for a document; cool but not what we need.  In this assignment we’ll use a technique called, “document distance”, which uses a vector-based “distance” function.  This method can be used to determine the proximity of documents in vector=-space. If the distance is 0, it suggests that the documents are identical, and you’ve caught someone trying to cheat.
+Plagiarism is a rampant issue, in the arts, education, and even in politics. In order to thwart plagiarism, many techniques have been developed and tried. CRC32 computes a numeric fingerprint for a document; cool but not what we need.  In this assignment we’ll use a technique called, “document distance”, which uses a vector-based “distance” function.  This method can be used to determine the proximity of documents in vector-space. If the distance is 0, it suggests that the documents are identical, and you’ve caught someone trying to cheat.
 
 ![vectors_diagram](./rd_imgs/vectors.png)
 
