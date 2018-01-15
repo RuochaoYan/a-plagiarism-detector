@@ -26,5 +26,5 @@ Plagiarism is a rampant issue, in the arts, education, and even in politics. In 
 
 ![vectors_diagram | width=200px](./rd_imgs/vectors.png)
 
-
+![vectors](./rd_imgs/vectors.png){:width="300px"}
 
