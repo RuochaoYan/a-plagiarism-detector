@@ -93,32 +93,31 @@ As you search to discover some of the many tools C++ offers for you to do this, 
 
 ### Pre-processing words
  
-As you build your word-list, you must keep perform two-types of processing on your words:  case-normalization and stop-word removal.  Case-normalization is the fancy way of saying that you words all be converted to lower-case.  
+As you build your word-list, you code must perform two transformations:  case-normalization and stop-word removal.  Case-normalization is the fancy way of saying that you words all be converted to lower-case.  
 
-“Stop-words” and words that should be eliminated from the underlying dataset.  You can find a list of stop words in your assignment folder called “stopwords.txt”.  This file contains a list of comma-separated words. Any word contained in the word-list in this file should be removed from your word-lists before proceeding with the remaining steps in this assignment. Can you think of a time-efficient way to remove stop words from your dataset?
+“Stop-words” are words that should be eliminated from the input set.  You can find a list of stop words in your assignment folder called “stopwords.txt”.  This file contains a list of comma-separated words. Any word contained in the word-list file should be removed from your word-list collections before proceeding with the remaining steps in this assignment. Before proceding, try to think of various ways you can remove stop words from your dataset in a time-efficient manner.
 
 ### Counting words
 
-Ahh — you’ve consumed your files, you’ve chosen a data structure to store your words, and another structure to store your word-collections. A old-school C programmer might choose a simple data structure to collect words — may be a linked-list.  That’s not a bad choice — but it leaves the problem of counting duplicate words up to you. 
+Ahh — you’ve consumed your files, you’ve chosen one data structure to store each word, and another structure to store your word-collections. A C programmer might choose a simple data structure to collect words — perhaps a linked-list.  That’s a fine choice — but it leaves the problem of counting duplicate words up to you. 
 
-Experienced C++ programmers would choose a collection class that provides the ability to partition and count elements automatically.  This is a topic we will explore in great detail in future lectures. Necessity, being the mother of invention, dictates that for this assignment, you must discover the options on your own. Again, you’re free to access the google, your books, and your peers for alternatives. Programming mastery comes after you develop the habit of considering options/implications, rather than accepting practical advice on good faith.
+Experienced C++ programmers would choose a collection class from the Standard Template Library (STL) that offers the ability to store and count elements automatically.  This is a topic we will explore in great detail in future lectures. Necessity, being the mother of invention, dictates that for this assignment, you must discover the options on your own. Again, you’re free to access the google, your books, and your peers for alternatives. Programming mastery comes after you develop the habit of considering options/implications, rather than accepting practical advice on good faith.
 
 ### Building bi-gram pairs 
 
-Once again we’re aiming to build an internal collection for each of our input files. The collection will store bi-grams in document order. This task is predicated on your ability to iterate our underlying collection of words.  A typical data structure course would have you start by choosing a structure that best fits the problem at hand.  Nothing wrong with that approach, and if you’re satisfied with that, so be it. As this is not a typical course,  you may consider the challenge of devising a generalizable process that solves the problem of assembling bi-grams and computing bi-gram frequencies without an additional data structure. 
+In our second major task, we are once again we’re aiming to build an internal collection for each of our input files. The collection will store bi-grams in document order. This task is predicated on your ability to iterate our underlying collection of words.  A typical data structure course would have you start by choosing a structure that best fits the problem at hand.  Nothing wrong with that approach, and if you’re satisfied with that, so be it. As this is not a typical course, perhaps you'll consider devising a generalizable process that solves the problem of assembling bi-grams and computing bi-gram frequencies without an additional data structure. It's up to you.
 
 ### Computing the dot-product
 
-So you’ve consume documents, read and parsed each line into words, stored the words in a collection class, and counted the frequency of each word in the associated collection.  Good job!  Have a cookie. Then, it’s time to write the code to compute the dot-product for your document pairs. To do so, you may refer to the distance formula (given above). If you’re stuck, it’s time to try the google, your books, and your peers for further insight.  
+So you’ve consumed three documents, read and parsed each line into words, stored the words in a collection class, counted the frequency of each word in the associated collection, and generated a set of bi-grams.  Good job!  Have a cookie. Then, it’s time to write the code to compute the dot-product for your document pairs. To do so, you may refer to the distance formula (given above). If you’re stuck, it’s time to try the google, your books, and your peers for further insight.  
 
 ### Saving results 
 
-In order to complete this assignment, your code will need to generate several files:
-A word file for input file A, containing a comma-separated list of words found in that file
-A word file for input file B, containing a comma-separated list of words found in that file
-A word file for input file C, containing a comma-separated list of words found in that file
-A 3-line summary file that contains the result of your analysis.  The summary format is:
-A “test-output” file that collects results of you tests (if any)
+In order to complete this assignment, your code will need to generate multiple files:
+1. A output file called "output1.txt" for the file "words1.txt", containing a comma-separated list of words found in that file
+2. A output file called "output2.txt" for the file "words2.txt", containing a comma-separated list of words found in that file
+3. A output file called "output3.txt" for the file "words3.txt", containing a comma-separated list of words found in that file
+4. A 3-line summary file (called results.txt) that contains the result of your analysis.  The summary format is:
 
 Distance A*B:  N   (where N is the resulting dot-product you computed between A and B)
 Distance A*C:  N   (where N is the resulting dot-product you computed between A and C)
@@ -126,23 +125,22 @@ Document A is most similar to document _X_  (where X is the name of the nearest 
 
 ## Testing
 
-Lousy programmers never test their code. They change jobs a lot. Good programmers test their code after they’ve finished writing it.  But great programmer write tests before they write code to solve problems. They try to dream up ways to break their own code, and to prove to themselves that the code has flaws.  
+**Lousy** programmers never test their code. They change jobs a lot. **Good** programmers test their code after they’ve finished writing it.  But **great** programmers write tests before they write code to solve problems. They try to dream up ways to break their own code, and to prove to themselves that the code has flaws.  
 
 The starter framework for your code contains a testing harness. That harness includes a method called “runtests”. As you develop test functions for your own code, you can add them to the “runtests” method in the harness. As the harness runs, your tests will be called automatically, and output from your tests will be captured in an output file.  For now, it’s up to you to decide how to use this facility — just recognize that writing self-tests for your code is an essential step in learning to improve your software skills.  Also note: you’ll lose points on this assignment if our auto-grading robot (Vlad-the-compiler) discovers that your testing output file is empty. 
 
-
 ## Code Style Guide
 
-This isn’t your first class on software or programming, and you’re probably wondering what we expect from you in terms of how your code is structured and formatted.  From the perspective of our auto-grader, structure and format are completely irrelevant. However, your instructors will be viewing your code as well, so you would be wise to adhere to a few rules of thumb. 
+This isn’t your first class on software or programming, and you’re probably wondering how we expect your code to be structured and formatted.  From the perspective of our auto-grader, structure and format are completely irrelevant. However, your instructors also will be viewing your code as well, so you would be wise to adhere to a few rules of thumb. 
 
 ### Format and Clarity
 
 Your code should be formatted to be easily readable by anyone with more than 1 year of programming experience.  Here are some guidelines for things that matter:
 
-Avoid dense and complicated code
-Be consistent!  Choose a coding standard for yourself and stick with it
-Partition your logic into class methods as needed to maintain clarity
-Document your code with comments that clearly indicate what you’re doing at a high level
+- Avoid dense and complicated code
+- Be consistent!  Choose a coding standard for yourself and stick with it
+- Partition your logic into class methods as needed to maintain clarity
+- Document your code with comments that clearly indicate what you’re doing at a high level
 
 Unsure if you’ve got it right?  Take a look at sample code in your textbook. Look at C++ code examples from github. Ask a friend to take a look. Most of all, use your judgement to estimate whether others can make sense of what you’re doing.  We’re being intentionally vague, so you get to learn what works and what doesn’t. 
 
