@@ -232,7 +232,7 @@ When you work on your assignments, many of you will create an IDE-based project.
 
 It is important to note that Vlad-the-Compiler doesn’t use IDE projects. He uses makefiles to test and grade your homework.  Each of your assignments will include a makefile for this purpose. We strongly recommend that before you turn in your assignments, you attempt to build and run your code using this makefile.  
 
-The files we provide for you by default in your assignment project folders will compile by default. They just won’t do much, until you add your own code to the solution.  The main reason you may run into problems is if you add new source files to your solution.  If you add additional source files to your project in order to complete your assignment, it is your responsibility to update the makefile we provide to account for your changes. 
+The files we provide for you by default in your assignment project folders will compile by default. They just won’t do much, until you add your own code to the solution. In general, you can feel free to changes the files we provide you, and to add new files as necessary to solve the assigned problems. Note, however, that some of the files we provide for you have portions that are marked "DO NOT CHANGE".  We ask that you follow that advice carefully.
 
-**YOU ARE RESPONSIBLE** to ensure your code builds correctly using **make** and the provided makefile, and that a valid executable is produced.
+NOTE: It is **YOUR RESPONSIBILITY** to ensure your solution can be built correctly by the **make** command.
 
