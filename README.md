@@ -163,7 +163,7 @@ The `runActual` method calls two additional methods on the ProcessController cla
   ProcessController& saveSummary(const FileProcessor &f1, const FileProcessor &f2, const FileProcessor &f3);
 ```
 
-These methods setup multiple instances of the FileProcessor class, which do the real work in this assignment. It's worth taking a look at how these are setup. You might find it interesting how ProcessController manages process control.  You will probably not need to make any changes to these methods.
+These methods setup multiple instances of the FileProcessor class, which do the real work in this assignment. It's worth taking a look at how these are setup. You might find it interesting how ProcessController manages process control.  You will probably not need to make any changes to these methods.  However, you may want to follow a similar pattern in the FileProcessor class, to handle the various tasks required by this assignment. 
 
 #### FileProcessor
 This class is where you'll write code to complete the tasks in this assignment. This file is mostly empty, waiting for your code. As the `ProcessController` runs, it will call `FileProcessor::run()` where your code is expected to take over.  If you haven't written object-oriented code before, this may seem confusing at first. Don't worry. It's easier that it may seem, and we'll cover objects and patterns in great detail this term. 
