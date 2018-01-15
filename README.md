@@ -30,7 +30,7 @@ Let’s define a “document” as a collection of words, similar to this docume
 
 ![equation](./rd_imgs/equation.png)
 
-If the resulting angle of all this is 0, then the documents are equal. If the angle is 90 degrees, the documents are completely different.  Advances in document processing are relatively new; many of these algorithms have been developed in the last 30 years or so. As our goal is to learn to write better code in C++, it’s time to move on to the implementation.
+If the resulting angle of all this is 0, then the documents are equal. If the angle is 90 degrees, the documents are completely different.  Advances in document processing are relatively new; many of these algorithms have been developed in the last 30 years or so. 
 
 ### Assembling a list of bi-grams
 
@@ -63,18 +63,18 @@ http://www.json.org
 To properly complete this assignment, your program needs to do the following:
 
 #### PART1
-1. Read each file and extract the words; discard fragments and punctuation
-2. Remove “stop words” (black-listed words) taken from blacklist.txt file
+1. Read each of three word-files and extract the words; discarding numnbers, fragments and punctuation
+2. Remove “stop words” (black-listed words), that may be found in the blacklist.txt file
 3. Determine the number times the lowercase form of each word appears in the document
 4. Compute the dot-product
 5. Output the results (details provided later in this document)
 
 #### PART2
-1. Assemble bi-grams for all words in each file
+1. Assemble bi-grams for all words in each of the three word-files
 2. Determine the statistical likelihood that any bi-gram will occur in that document
 3. Generate a json-formatted file for each document that contains a list of bi-grams and their statistical likelihood 
 
-You’ll be grateful to know that we’ve already built a simple C++ framework for you. All you have to do is flesh out the key portions of your algorithms. 
+You’ll be grateful to know that we’ve already built a simple C++ framework for you. All you have to do is flesh out the key portions of your algorithms. As our goal is to learn to write better code in C++, it’s time to move on to the implementation. 
 
 ### Reading files in C++
 
