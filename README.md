@@ -44,11 +44,13 @@ Bi-grams are word-pairs. The bi-grams in a sentence is the set of word-pairs we 
 
 In part 2 of your assignment, you are expected to generate a json formatted text file. JSON is a lightweight text-based data interchange format derived from javascript.  JSON files contain an ordered list of key-value pairs, making it an natural format for encoding ordered collections. For example, I can encode the list of my favorite types of fruit into json like this:
 
+```
 {
     "fruit": "Apple",
     "size": "Large",
     "color": "Red"
 }
+```
 
 You’ll discover that json files make it just as easy to encode hierarchical data collections as well.  You can learn more about JSON here:
 
