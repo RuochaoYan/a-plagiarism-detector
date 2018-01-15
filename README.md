@@ -80,7 +80,6 @@ As we’ve discussed in class, reading files in C++ is typically done using stre
 
 ![streams](./rd_imgs/streams.png)
 
-=================================
 
 ### Extracting words
 
@@ -130,11 +129,11 @@ Lousy programmers never test their code. They change jobs a lot. Good programmer
 The starter framework for your code contains a testing harness. That harness includes a method called “runtests”. As you develop test functions for your own code, you can add them to the “runtests” method in the harness. As the harness runs, your tests will be called automatically, and output from your tests will be captured in an output file.  For now, it’s up to you to decide how to use this facility — just recognize that writing self-tests for your code is an essential step in learning to improve your software skills.  Also note: you’ll lose points on this assignment if our auto-grading robot (Vlad-the-compiler) discovers that your testing output file is empty. 
 
 
-## Code Formatting and Style Guide
+## Code Style Guide
 
 This isn’t your first class on software or programming, and you’re probably wondering what we expect from you in terms of how your code is structured and formatted.  From the perspective of our auto-grader, structure and format are completely irrelevant. However, your instructors will be viewing your code as well, so you would be wise to adhere to a few rules of thumb. 
 
-### ormat and Clarity
+### Format and Clarity
 
 Your code should be formatted to be easily readable by anyone with more than 1 year of programming experience.  Here are some guidelines for things that matter:
 
