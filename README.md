@@ -17,7 +17,7 @@ Take time to reflect on these assignments, and consider the larger concepts — 
 ## Overview
 
 In this assignment you will be reading data from files, processing and storing the file contents, processing and comparing the contents, and writing the results back to output files.  If you worked for a bank, this standard input-output process would be referred to by the acronym ETL (Extract, Transform, Load).  ETL may be the most common process patterns you’ll see.
-The file processing component for this assignment will be rather mundane, apart from the fact that we’ll be using C++ streams. It’s the analysis and tranformational part of this assignment that is interesting. 
+The file reading component for this assignment will be rather mundane, apart from the fact that we’ll be using C++ streams. It’s the analysis and tranformational part of this assignment that is interesting. 
 
 
 ### Measuring Similarity Between Documents
@@ -63,16 +63,26 @@ http://www.json.org
 To properly complete this assignment, your program needs to do the following:
 
 #### PART1
-1. Read each of three word-files and extract the words; discarding numnbers, fragments and punctuation
+1. Read each of three word-files and extract the words; discarding numnbers, alpha-numeric words, and punctuation
 2. Remove “stop words” (black-listed words), that may be found in the blacklist.txt file
-3. Determine the number times the lowercase form of each word appears in the document
+3. Determine the number times each word, regardless of case, appears in the document
 4. Compute the dot-product
 5. Output the results (details provided later in this document)
 
 #### PART2
 1. Assemble bi-grams for all words in each of the three word-files
 2. Determine the statistical likelihood that any bi-gram will occur in that document
-3. Generate a json-formatted file for each document that contains a list of bi-grams and their statistical likelihood 
+3. For each word-file your read, generate a json-formatted output file (bigrams1.json, bigrams2.json, bigrams3.json) that contains a list of bi-grams and their statistical likelihood 
+
+The format of the bi-gram output file is:
+
+```
+{
+    {"bigram" : "aaa-bbb", "probability" : p1},
+    {"bigram" : "bbb-ccc", "probability" : p2},
+    {"bigram" : "ccc-ddd", "probability" : p3},    
+}
+```
 
 You’ll be grateful to know that we’ve already built a simple C++ framework for you. All you have to do is flesh out the key portions of your algorithms. As our goal is to learn to write better code in C++, it’s time to move on to the implementation. 
 
@@ -95,7 +105,7 @@ As you search to discover some of the many tools C++ offers for you to do this, 
  
 As you build your word-list, you code must perform two transformations:  case-normalization and stop-word removal.  Case-normalization is the fancy way of saying that you words all be converted to lower-case.  
 
-“Stop-words” are words that should be eliminated from the input set.  You can find a list of stop words in your assignment folder called “stopwords.txt”.  This file contains a list of comma-separated words. Any word contained in the word-list file should be removed from your word-list collections before proceeding with the remaining steps in this assignment. Before proceding, try to think of various ways you can remove stop words from your dataset in a time-efficient manner.
+“Stop-words” are words that should be eliminated from the input set.  You can find a list of stop words in a file called "stopwords.txt" in your assignment folder.  This file contains a list of comma-separated words. Any word contained in the word-list file should be removed from your word-list collections before proceeding with the remaining steps in this assignment. Before proceding, try to think of various ways you can remove stop words from your dataset in a time-efficient manner.
 
 ### Counting words
 
@@ -146,13 +156,13 @@ Unsure if you’ve got it right?  Take a look at sample code in your textbook. L
 
 ## Submitting Your Work
 
-You’ll recall that your work is due by 11:15pm (PST).  We strongly recommend that you aim for 6p (PST) as to avoid the last minute mishaps that frequently occur when panic of an impending deliverables sets in, when we all tend to start making silly mistakes.  
+You’ll recall that your work is due by 11:15pm (PST).  We strongly recommend that you aim for 6p (PST) as to avoid the last minute mishaps that frequently occur when panic related to an impending deliverable begins, and we all tend to make silly mistakes.  
 
-As we’ve said in lecture, you will turn your work in using github. Github is an online code repository.  Managing code can be very confusing, but github mades the process fairly easy. And the way we’re going to handle code in this class is even simpler still.  More on that later.
+As we’ve said in lecture, you will turn your work in using github. Github is an online code repository.  Managing code can be very confusing, but github makes the process fairly easy. And the way we’re going to handle code in this class is even simpler still.  More on that later.
 
 With that said, please understand that when you submit your work via github, your changes are automatically timestamped. Meta data in the code repository makes it plainly obvious to humans and computers alike when your submission arrived.  This is worth mentioning, because the github timestamps on your submissions will be used to to arbitrate whether you turned your work in on time or not. 
 
-Your homework will usually be auto-graded by “Vlad the Compiler” — otherwise known as our software-based auto-grader.  Vlad can be a bit harsh when it comes to scoring homework (see the syllabus), but he does have a somewhat casual relationship with deadlines.  During Grad-school, Vlad often spent spring-break in Cabo San Lucas where learned to enjoy siestas.  Most nights, Vlad awakens from his last-afternoon siesta around midnight, to begin the process of grading your assignments. In other words, you can generally count on a 45 minute grace period for turning in your work. We strongly suggest that you do not try his patience.
+Your homework will usually be auto-graded by “Vlad the Compiler” — otherwise known as our software-based auto-grader.  Vlad can be a bit harsh when it comes to scoring homework (see the syllabus), but he does have a somewhat casual relationship with deadlines.  During Grad-school, Vlad often spent spring-break in Cabo-San-Lucas where he learned to enjoy siestas.  Most nights, Vlad awakens from his last-afternoon siesta around midnight, to begin the process of grading your assignments. In other words, you can generally count on a 45 minute grace period for turning in your work. We strongly suggest that you do not try his patience.
 
 ## Caveats and Warnings
 
