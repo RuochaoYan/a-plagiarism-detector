@@ -148,13 +148,28 @@ After you get your code from github, take a look inside the assignment folder. Y
 Naturally, main.cpp contains your main function, where processing for this application begins. Let's move on to other more interesting classes. 
 
 #### ProcessController
-xxx 
+This class is the top-most controller for this process. It sets up and drives the rest of the processing you'll need to do to complete this assignment. The two most important functions are:
+
+```
+  ProcessController& runActual();
+  ProcessController& runTests();
+```
+
+`runActual` is the method that drives the primary process you'll implement to complete this assignment.  This method is complete, and shouldn't require changes. `runTests` is a placeholder function where you can add test-cases to ensure your code is working. 
+
+The `runActual` method calls two additional methods on the ProcessController class:
+```
+  ProcessController& processWordFiles();
+  ProcessController& saveSummary(const FileProcessor &f1, const FileProcessor &f2, const FileProcessor &f3);
+```
+
+These methods setup multiple instances of the FileProcessor class, which do the real work in this assignment. It's worth taking a look at how these are setup. You might find it interesting how ProcessController manages process control.  You will probably not need to make any changes to these methods.
 
 #### FileProcessor
-xxx 
+This class is where you'll write code to complete the tasks in this assignment. This file is mostly empty, waiting for your code. As the `ProcessController` runs, it will call `FileProcessor::run()` where your code is expected to take over.  If you haven't written object-oriented code before, this may seem confusing at first. Don't worry. It's easier that it may seem, and we'll cover objects and patterns in great detail this term. 
 
 #### GradingHarness
-xxx 
+The `GradingHarness` class is here as an example, but you may feel free to ignore it. It's part of the framework we use to enable Vlad-the-Compiler to autograde your assignments.  Please don't make changes to this file. 
 
 
 ## Testing
