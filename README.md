@@ -1,5 +1,5 @@
 # Assignment1
-Due: Jan 28, 11:15p
+Due: Jan 28, 11:15p (PST)
 
 ## Preface
 
