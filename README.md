@@ -69,14 +69,26 @@ To properly complete this assignment, your program needs to do the following:
 2. Remove “stop words” (black-listed words), that may be found in the blacklist.txt file
 3. Determine the number times each word, regardless of case, appears in the document
 4. Compute the dot-product
-5. Output the results (details provided later in this document)
+5. Output the results (shown below)
+
+### Saving results for Part1
+
+In order to complete Part1 of this assignment, your code will need to generate multiple files:
+1. A output file ("output1.txt") for "words1.txt", containing a comma-separated list of words found in that file
+2. A output file ("output2.txt") for "words2.txt", containing a comma-separated list of words found in that file
+3. A output file ("output3.txt") for "words3.txt", containing a comma-separated list of words found in that file
+4. A 3-line summary file (called results.txt) that contains the result of your analysis.  The summary format is:
+
+Distance A*B:  N   (where N is the resulting dot-product you computed between A and B)
+Distance A*C:  N   (where N is the resulting dot-product you computed between A and C)
+Document A is most similar to document _X_  (where X is the name of the nearest doc [A or B])
 
 #### PART2
 1. Assemble bi-grams for all words in each of the three word-files
 2. Determine the statistical likelihood that any bi-gram will occur in that document
 3. For each word-file your read, generate a json-formatted output file (bigrams1.json, bigrams2.json, bigrams3.json) that contains a list of bi-grams and their statistical likelihood 
 
-The format of the bi-gram output file is:
+The json format of the bi-gram output file is:
 
 ```
 {
@@ -122,18 +134,6 @@ In our second major task, we are once again we’re aiming to build an internal 
 ### Computing the dot-product
 
 So you’ve consumed three documents, read and parsed each line into words, stored the words in a collection class, counted the frequency of each word in the associated collection, and generated a set of bi-grams.  Good job!  Have a cookie. Then, it’s time to write the code to compute the dot-product for your document pairs. To do so, you may refer to the distance formula (given above). If you’re stuck, it’s time to try the google, your books, and your peers for further insight.  
-
-### Saving results 
-
-In order to complete this assignment, your code will need to generate multiple files:
-1. A output file ("output1.txt") for "words1.txt", containing a comma-separated list of words found in that file
-2. A output file ("output2.txt") for "words2.txt", containing a comma-separated list of words found in that file
-3. A output file ("output3.txt") for "words3.txt", containing a comma-separated list of words found in that file
-4. A 3-line summary file (called results.txt) that contains the result of your analysis.  The summary format is:
-
-Distance A*B:  N   (where N is the resulting dot-product you computed between A and B)
-Distance A*C:  N   (where N is the resulting dot-product you computed between A and C)
-Document A is most similar to document _X_  (where X is the name of the nearest doc [A or B])
 
 ## Testing
 
