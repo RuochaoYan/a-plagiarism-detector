@@ -15,18 +15,17 @@ As important as learning the C++ language may be, we believe that it’s even mo
 
 Take time to reflect on these assignments, and consider the larger concepts — before you start writing any code.  Remember that a fundamental advantage of object-oriented programming is that these techniques allow us to more easily reason about the problem space.  So, take some time to consider the relationships between key elements in the problem space, and how you might synthesize them into a working model.  During this phase, it’s a great idea to chat with peers and instructors on concepts you’re working through. Software design is a team sport.
 
-
-## Overview
-
-In this assignment you will be reading data from files, processing and storing the file contents, processing and comparing the contents, and writing the results back to output files.  If you worked for a bank, this standard input-output process would be referred to by the acronym ETL (Extract, Transform, Load).  ETL may be the most common process patterns you’ll see.
-The file reading component for this assignment will be rather mundane, apart from the fact that we’ll be using C++ streams. It’s the analysis and tranformational part of this assignment that is interesting. 
-
 ### An Aside About Writing C++ Code
 
 You may be wondering how we can expect you to write C++ classes and methods, given that we haven't taught you how to do that just yet. Fortunately for you, in this assignment, we're provided a set of C++ classes that handle the overall process for you. Most of the code you write will be fairy traditional C-oriented code. The one exception is that you may choose to use some of the powerful collection classes provided by the Standard Template Library (STL). In that case, you'll find that the syntax and usage patterns for the STL can be found and understood in very little time. There are hundreds of great resources on the web (and in your book) on this topic. 
 
 In case you haven't discovered it already, [stackoverflow](https://www.stackoverflow.com) is a fantastic resource for learning and solving small programming-related issues. 
 
+
+## Overview
+
+In this assignment you will be reading data from files, processing and storing the file contents, processing and comparing the contents, and writing the results back to output files.  If you worked for a bank, this standard input-output process would be referred to by the acronym ETL (Extract, Transform, Load).  ETL may be the most common process patterns you’ll see.
+The file reading component for this assignment will be rather mundane, apart from the fact that we’ll be using C++ streams. It’s the analysis and tranformational part of this assignment that is interesting. 
 
 ### Measuring Similarity Between Documents
 
