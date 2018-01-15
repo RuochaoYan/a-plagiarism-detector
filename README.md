@@ -137,6 +137,23 @@ So you’ve consumed three documents, read and parsed each line into words, stor
 
 ## Assignment Starter Code
 
+### Getting Assignments from Github
+
+#### What is Github?
+Github is a SaaS product/website where teams can manage and share source-code repositories. Github uses the git source-code management tools. Each of your assignments is stored on github. Using github follows a common set of steps:
+
+1. "fork" each assignment repository; a copy of the respository will be downloaded onto your computer
+2. work on the assignment, adding/editing sources files to meet assignment requirements
+3. submit your completed changes back to github using the git tools
+
+Most of you will have used this process may times by now. If you have never used this process, there are many excellent tutorials on getting started with git (tools) and github (website).
+
+To learn more about github: https://guides.github.com/activities/hello-world/
+To learn more about git: https://www.atlassian.com/git/tutorials, and https://try.github.io/levels/1/challenges/1
+
+#### Getting Assignments
+When new assignments become available, we will publish a link to them on piazza.  We will also make a reference to the assignment in your lecture slides. 
+
 ### Overview
 After you get your code from github, take a look inside the assignment folder. You'll find the following items:
 1. main.cpp
