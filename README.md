@@ -130,7 +130,7 @@ As you search to discover some of the many tools C++ offers for you to do this, 
  
 As you build your word-list, you code must perform two transformations:  case-normalization and stop-word removal.  Case-normalization is the fancy way of saying that you words all be converted to lower-case.  
 
-“Stop-words” are words that should be eliminated from the input set.  You can find a list of stop words in a file called "stopwords.txt" in your assignment folder.  This file contains a list of comma-separated words. Any word contained in the word-list file should be removed from your word-list collections before proceeding with the remaining steps in this assignment. Before proceding, try to think of various ways you can remove stop words from your dataset in a time-efficient manner.
+“Stop-words” are words that should be eliminated from the input set.  You can find a list of stop words in a file called "stopwords.txt" in your assignment/content folder.  This file contains a list of comma-separated words. Any word contained in the word-list file should be removed from your word-list collections before proceeding with the remaining steps in this assignment. Before proceding, try to think of various ways you can remove stop words from your dataset in a time-efficient manner.
 
 ### Counting words
 
