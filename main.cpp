@@ -10,8 +10,8 @@
 
 int main(int argc, const char * argv[]) {
   
-    //STUDENTS: Set the project path to the root of your local assignment folder...
-  const char *theProjectPath ="/Users/rickg/Code/ece180-assignment1/ece180-assignment1";
+    //STUDENTS: Set this variable to the project path of the root of your local assignment folder...
+  const char *theProjectPath ="./";
 
   ProcessController theController(theProjectPath);
   theController.runTests().runActual();
