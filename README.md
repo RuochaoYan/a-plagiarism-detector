@@ -134,7 +134,7 @@ Experienced C++ programmers would choose a collection class from the Standard Te
 
 ### Building bi-gram pairs 
 
-In our second major task, we are once again we’re aiming to build an internal collection for each of our input files. The collection will store bi-grams in document order. This task is predicated on your ability to iterate our underlying collection of words.  A typical data structure course would have you start by choosing a structure that best fits the problem at hand.  Nothing wrong with that approach, and if you’re satisfied with that, so be it. As this is not a typical course, perhaps you'll consider devising a generalizable process that solves the problem of assembling bi-grams and computing bi-gram frequencies without an additional data structure. It's up to you.
+In our second major task, we are once again we’re aiming to build an internal collection for each of our input files. The collection will store bi-grams present in the input file. This task is predicated on your ability to iterate our underlying collection of words.  A typical data structure course would have you start by choosing a structure that best fits the problem at hand.  Nothing wrong with that approach, and if you’re satisfied with that, so be it. As this is not a typical course, perhaps you'll consider devising a generalizable process that solves the problem of assembling bi-grams and computing bi-gram frequencies without an additional data structure. It's up to you.
 
 ### Computing the dot-product
 
