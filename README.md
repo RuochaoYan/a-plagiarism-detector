@@ -71,7 +71,7 @@ To properly complete this assignment, your program needs to do the following:
 
 #### PART1
 1. Read each of three word-files and extract the words; discarding numnbers, alpha-numeric words, and punctuation
-2. Remove “stop words” (black-listed words), that may be found in the blacklist.txt file
+2. Remove “stop words” (black-listed words), that may be found in the stopwords.txt file
 3. Determine the number times each word, regardless of case, appears in the document
 4. Compute the dot-product
 5. Output the results (shown below)
@@ -87,6 +87,12 @@ In order to complete Part1 of this assignment, your code will need to generate m
 Distance A*B:  N   (where N is the resulting dot-product you computed between A and B)
 Distance A*C:  N   (where N is the resulting dot-product you computed between A and C)
 Document A is most similar to document _X_  (where X is the name of the nearest doc [A or B])
+
+**Note**: Your code will rely on external resource files for input:
+1. word-files (3)
+2. stop-word file (1)
+
+These files are available under the ./content folder of your assignment folder. Your code will need to specify the correct path to get these files. If you look at main.cpp, there is a variable (`const char *theProjectPath`) which you must set to point to the folder on your drive where the assignment code lives. This path is provided to your controller classes, and is available for you to use in your when specifying input file paths.
 
 #### PART2
 1. Assemble bi-grams for all words in each of the three word-files
