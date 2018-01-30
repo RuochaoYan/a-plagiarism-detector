@@ -11,7 +11,7 @@
 int main(int argc, const char * argv[]) {
   
     //STUDENTS: Set this variable to the project path of the root of your local assignment folder...
-  const char *theProjectPath ="./";
+  const char *theProjectPath ="/Users/yanruochao/ECE180C++/am1/assignment1-RuochaoYan/";
 
   ProcessController theController(theProjectPath);
   theController.runTests().runActual();
