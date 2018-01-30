@@ -1,0 +1,7 @@
+{
+  {"bigrams" : "hello-world", "probability" : 0.2},
+  {"bigrams" : "meet-you", "probability" : 0.2},
+  {"bigrams" : "nice-to", "probability" : 0.2},
+  {"bigrams" : "to-meet", "probability" : 0.2},
+  {"bigrams" : "world-nice", "probability" : 0.2},
+}

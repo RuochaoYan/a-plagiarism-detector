@@ -1,1 +1,29 @@
 running tests...
+test some simple input files
+file1's word frequency: 
+hello : 1
+meet : 1
+nice : 1
+to : 1
+world : 1
+you : 1
+file2's word frequency: 
+hello : 1
+meet : 1
+nice : 1
+to : 1
+world : 1
+you : 1
+file3's word frequency: 
+hello : 1
+nice : 1
+see : 1
+to : 1
+too : 1
+world : 1
+you : 1
+mod1: 2.44949 mod2: 2.44949 mod3: 2.64575
+12's dot product: 6
+13's dot product: 5
+distance between 1 and 2: 0
+distance between 1 and 3: 0.689575

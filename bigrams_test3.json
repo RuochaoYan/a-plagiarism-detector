@@ -1,0 +1,8 @@
+{
+  {"bigrams" : "hello-world", "probability" : 0.166667},
+  {"bigrams" : "nice-to", "probability" : 0.166667},
+  {"bigrams" : "see-you", "probability" : 0.166667},
+  {"bigrams" : "to-see", "probability" : 0.166667},
+  {"bigrams" : "world-nice", "probability" : 0.166667},
+  {"bigrams" : "you-too", "probability" : 0.166667},
+}
